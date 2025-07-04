@@ -33,6 +33,6 @@ jobs:
             sudo systemctl daemon-reload
 
             echo ">> Restart application service"
-            sudo systemctl restart 02_medic_care
+            sudo systemctl restart 01_barber_shop_cdci
 
             echo "✅ Deployment complete!"
