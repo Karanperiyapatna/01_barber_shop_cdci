@@ -18,7 +18,7 @@ jobs:
           key: ${{ secrets.EC2_SSH_KEY }}
           script: |
             echo ">> Change to app directory"
-            cd /home/ubuntu/myciapp
+            cd /home/ubuntu/01_barber_shop_cdci
 
             echo ">> Mark repo as safe to fix dubious ownership issue"
             git config --global --add safe.directory /home/ubuntu/01_barber_shop_cdci
