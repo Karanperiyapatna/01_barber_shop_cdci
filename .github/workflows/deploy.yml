@@ -28,6 +28,9 @@ jobs:
 
             echo ">> Reset local code to match origin/main"
             git reset --hard origin/main
+            
+            echo ">> Clean untracked files"
+            git clean -fd
 
             echo ">> Reload systemd daemon to avoid warning"
             sudo systemctl daemon-reload
